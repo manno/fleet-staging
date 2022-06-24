@@ -4,7 +4,6 @@ go 1.18
 
 replace (
 	github.com/rancher/fleet/pkg/apis => ./pkg/apis
-	helm.sh/helm/v3 => github.com/rancher/helm/v3 v3.8.0-rancher1
 	k8s.io/api => k8s.io/api v0.24.2
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.24.2
 	k8s.io/apimachinery => k8s.io/apimachinery v0.24.2 // indirect
@@ -268,3 +267,5 @@ require (
 replace github.com/json-iterator/go v1.1.10 => github.com/json-iterator/go v1.1.12
 
 replace k8s.io/client-go => ../client-go
+
+replace helm.sh/helm/v3 => ../helm
